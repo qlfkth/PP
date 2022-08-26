@@ -95,13 +95,20 @@ public class PlayerController : MonoBehaviour
         GameManager.instanse.OnPlayerDead();
     }
 
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Dead" && !isDead)
         {
             Die();
         }
+        if (other.gameObject.CompareTag("item"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -112,9 +119,11 @@ public class PlayerController : MonoBehaviour
             
         }
     }
+    
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         isGrounded = false;
     }
+
 }

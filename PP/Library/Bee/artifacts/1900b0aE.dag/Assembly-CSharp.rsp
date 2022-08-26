@@ -377,6 +377,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/BackgroundLoop.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/item.cs"
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/Platform.cs"
 "Assets/Scripts/Platform1.cs"

@@ -8,7 +8,7 @@ public class PlatformSpawner : MonoBehaviour
     public int count = 3; //생성할 발판 수
 
     public float timeBetSpawnMin = 0f; //다음 배치까지의 시간 간격 최솟값
-    public float timeBetSpwanMax = 0f; //다음 배치까지의 시간 간격 최댓값
+    public float timeBetSpwanMax = 0f ; //다음 배치까지의 시간 간격 최댓값
     public float timeBetSpawn; //다음 배치까지의 시간 간격
 
     public float yMin = -2.5f; //배치할 위치의 최소 y 값
