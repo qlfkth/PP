@@ -13,7 +13,7 @@ public class Platform1 : MonoBehaviour
 
         for (int i = 0; i < obstacles.Length; i++)
         {
-            obstacles[i].SetActive(Random.Range(0, 5) == 0 ? true : false);
+            obstacles[i].SetActive(Random.Range(0, 10) == 0 ? true : false);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
