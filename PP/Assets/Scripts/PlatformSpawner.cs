@@ -49,7 +49,7 @@ public class PlatformSpawner : MonoBehaviour
         //게임오버 상태에서는 동작하지 않음
         //if (GameManager.instane.isGameovr)
         //{
-          //  return;
+        //  return;
         //}
 
         //마지막 배치 시점에서 timeBetSpawn 이상 시간이 흘렀다면
@@ -82,4 +82,5 @@ public class PlatformSpawner : MonoBehaviour
             }
         }
     }
+   
 }

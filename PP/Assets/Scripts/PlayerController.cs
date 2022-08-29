@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class PlayerController : MonoBehaviour
     private float SlideTime;
     
 
+    
+    
+    
+
+
     private Rigidbody2D playerRigidbdy;
     private Animator animator;
     private AudioSource playerAudio;
@@ -23,6 +29,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         boxcoll = GetComponent<BoxCollider2D>();
+        
     }
 
     // Update is called once per frame
@@ -30,6 +37,11 @@ public class PlayerController : MonoBehaviour
     {
         Jump();
         Sliding();
+
+        
+        
+
+        
     }
     private void Jump()
     {
@@ -91,6 +103,8 @@ public class PlayerController : MonoBehaviour
         playerAudio.Play();
         playerRigidbdy.velocity = Vector2.zero;
         isDead = true;
+        
+
 
         GameManager.instanse.OnPlayerDead();
     }

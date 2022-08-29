@@ -23,5 +23,6 @@ public class Platform : MonoBehaviour
             stepped = true;            
         }
     }
+   
 
 }
